@@ -20,7 +20,7 @@ module BikeContainer
 
 	def dock(bike)
 		# if the capacity is reached, raise an exception
-		raise "Holder is full" if full?
+		raise "Bike storage is full" if full?
 		bikes << bike
 	end
 
@@ -34,5 +34,9 @@ module BikeContainer
 
 	def available_bikes
 		bikes.reject {|bike| bike.broken? }
+	end
+
+	def unfixed_bikes
+		bikes.select {|bike| bike.broken? }
 	end
 end
