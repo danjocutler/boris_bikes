@@ -26,6 +26,7 @@ describe Bike do
 	end
 
 	it "should have a serial number" do
+		
 	end
 
 end

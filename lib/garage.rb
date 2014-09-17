@@ -9,8 +9,4 @@ class Garage
 		dock(bike)
 	end
 
-	def unfixed_bikes
-		bikes.select {|bike| bike.broken? }
-	end
-
 end

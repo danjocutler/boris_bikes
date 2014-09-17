@@ -16,4 +16,6 @@ describe Van do
 		van.dock(bike)
 		expect{van.release(bike)}.to change{van.bike_count}.by -1
 	end
+
+	
 end
