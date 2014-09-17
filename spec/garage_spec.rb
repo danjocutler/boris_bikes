@@ -38,14 +38,4 @@ describe Garage do
 		expect(garage.available_bikes).to eq([working_bike])
 	end
 
-	it "should know when it's full" do
-		expect(garage).not_to be_full
-		garage.capacity.times { garage.dock(Bike.new) }
-		expect(garage).to be_full
-	end
-
-	it "should not accept a bike if it's full" do
-		fill_garage garage
-		expect{garage.dock(bike)}.to raise_error "Bike storage is full"
-	end
 end

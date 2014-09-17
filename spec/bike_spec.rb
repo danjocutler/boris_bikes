@@ -24,5 +24,8 @@ describe Bike do
 		bike.fix!
 		expect(bike).not_to be_broken
 	end
-	
+
+	it "should have a serial number" do
+	end
+
 end
