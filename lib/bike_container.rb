@@ -19,7 +19,6 @@ module BikeContainer
 	end
 
 	def dock(bike)
-		# if the capacity is reached, raise an exception
 		raise "Bike storage is full" if full?
 		bikes << bike
 	end
